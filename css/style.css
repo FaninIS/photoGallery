@@ -34,7 +34,7 @@ body {
    position: relative;
 }
 
-.photo a:after {
+.photo a::after {
    content: '';
    background: transparent url(../img/icons/eye-icon.png) no-repeat center;
    width: 52px;
@@ -48,7 +48,7 @@ body {
    visibility: hidden;
 }
 
-.photo:hover > a:after {
+.photo:hover > a::after {
    visibility: visible;
 }
 
@@ -71,6 +71,18 @@ h1 {
    margin: 30px 0;
 }
 
+h1::first-letter {
+   font-size: larger;
+   font-weight: bold;
+   color: yellow;
+}
+
+#y-letter {
+   font-size: larger;
+   font-weight: bold;
+   color: yellow;
+}
+
 figcaption:hover, h1:hover {
    color: #FA2A0D;
 }
@@ -79,7 +91,7 @@ figcaption:hover, h1:hover {
    margin-bottom: 50px;
 }
 
-#gallery:after { 
+#gallery::after { 
    content: '';
    display: block; 
    height: 0; 
